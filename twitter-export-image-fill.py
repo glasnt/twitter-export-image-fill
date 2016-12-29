@@ -22,8 +22,13 @@ import os
 import re
 import sys
 import time
-import urllib
 from shutil import copyfile
+
+# The location of urlretrieve changed modules in Python 3
+if (sys.version_info > (3, 0)):
+    from urllib.request import urlretrieve
+else:
+    from urllib import urlretrieve
 
 # Introduce yourself
 
@@ -181,7 +186,7 @@ for date in index:
             while not downloaded:
               # Actually download the file!
               try:
-                urllib.urlretrieve(better_url, local_filename)
+                urlretrieve(better_url, local_filename)
               except:
                 download_tries = download_tries - 1
                 if download_tries == 0:
