@@ -39,6 +39,14 @@ Use an earlier archive to get images from if possible, instead of downloading (u
 
 ### FAQ
 
+**Does this work with Python 2?**
+
+Yes!
+
+**Does this work with Python 3?**
+
+Yes!
+
 **Does this work on Windows?**
 
 Not sure. I wrote/tested it on Mac OS only. If you run it on Windows (successfully or not), please let me know.
